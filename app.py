@@ -1,16 +1,11 @@
 import dash
 from dash import html, dcc
 import dash_bootstrap_components as dbc
-import dash_auth
 import pandas as pd
 
-VALID_USERNAME_PASSWORD_PAIRS = {'hello': 'world', 'bill':'pepper'}
 colors = {'background': '#0086b3','text': '#ffffff'}#blue background and white text - Note: This matches the YETI theme!
 
 app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.YETI, dbc.icons.FONT_AWESOME])
-
-auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSWORD_PAIRS)
-
 server = app.server
 
 sidebar = dbc.Nav(
