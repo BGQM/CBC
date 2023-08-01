@@ -25,7 +25,7 @@ layout = html.Div([
     dcc.Markdown('### CBC Ministries - People Served'),
     html.Hr(),
     dbc.RadioItems(id='year_radio', options=year_list, value=max_year, inline=True,
-        labelStyle={'display':'inline-block', 'marginLeft': '10px'}),
+        labelStyle={'display':'inline-block', 'margin-right': '15px'}),
     html.Hr(),
     dcc.Dropdown(id='ministries_dpdn', options=[], multi=True),
     dcc.Graph(id='graph2', figure={}),
