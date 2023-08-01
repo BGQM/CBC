@@ -28,7 +28,8 @@ layout = html.Div([
         labelStyle={'display':'inline-block', 'marginLeft': '10px'}),
     html.Hr(),
     dcc.Dropdown(id='ministries_dpdn', options=[], multi=True),
-    dcc.Graph(id='graph2', figure={})
+    dcc.Graph(id='graph2', figure={}),
+    html.Hr(),
     ])
 
 # Determine the options of ministries based on the year selected
